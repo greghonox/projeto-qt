@@ -1,0 +1,120 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'cadastrar_usuario.ui'
+#
+# Created by: PyQt5 UI code generator 5.10
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(330, 347)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(33)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
+        Form.setSizePolicy(sizePolicy)
+        Form.setMinimumSize(QtCore.QSize(330, 347))
+        Form.setMaximumSize(QtCore.QSize(330, 347))
+        Form.setFocusPolicy(QtCore.Qt.TabFocus)
+        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3.setGeometry(QtCore.QRect(10, 20, 221, 21))
+        font = QtGui.QFont()
+        font.setFamily("FreeMono")
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet("")
+        self.label_3.setObjectName("label_3")
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(170, -10, 161, 101))
+        self.label.setStyleSheet("image: url(:/img/img/1455555019_users-9_icon-icons.com_53249.svg);")
+        self.label.setText("")
+        self.label.setObjectName("label")
+        self.tabWidget = QtWidgets.QTabWidget(Form)
+        self.tabWidget.setGeometry(QtCore.QRect(10, 70, 311, 221))
+        self.tabWidget.setStyleSheet("background: rgb(200, 200,200);")
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.widget = QtWidgets.QWidget(self.tab)
+        self.widget.setGeometry(QtCore.QRect(60, 50, 201, 91))
+        self.widget.setObjectName("widget")
+        self.formLayout = QtWidgets.QFormLayout(self.widget)
+        self.formLayout.setContentsMargins(8, 8, 4, 8)
+        self.formLayout.setHorizontalSpacing(8)
+        self.formLayout.setVerticalSpacing(21)
+        self.formLayout.setObjectName("formLayout")
+        self.label_2 = QtWidgets.QLabel(self.widget)
+        self.label_2.setObjectName("label_2")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_2)
+        self.lineEdit = QtWidgets.QLineEdit(self.widget)
+        self.lineEdit.setObjectName("lineEdit")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit)
+        self.label_4 = QtWidgets.QLabel(self.widget)
+        self.label_4.setObjectName("label_4")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_4)
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.widget)
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.lineEdit_2)
+        self.tabWidget.addTab(self.tab, "")
+        self.splitter = QtWidgets.QSplitter(Form)
+        self.splitter.setGeometry(QtCore.QRect(130, 300, 191, 31))
+        self.splitter.setOrientation(QtCore.Qt.Horizontal)
+        self.splitter.setObjectName("splitter")
+        self.pushButton = QtWidgets.QPushButton(self.splitter)
+        self.pushButton.setStyleSheet("image: url(:/img/img/icons8-ok-filled.svg);\n"
+"background-color:   rgb(200,200,200);")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/img/img/icons8-ok-filled.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton.setIcon(icon)
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.splitter)
+        self.pushButton_2.setStyleSheet("background-color:   rgb(200,200,200);")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(":/img/img/icons8-cancelar.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_2.setIcon(icon1)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.label_6 = QtWidgets.QLabel(Form)
+        self.label_6.setGeometry(QtCore.QRect(0, 0, 658, 41))
+        self.label_6.setStyleSheet("background-color:  rgba(255, 207, 183, 200);")
+        self.label_6.setText("")
+        self.label_6.setObjectName("label_6")
+        self.label_6.raise_()
+        self.label.raise_()
+        self.label_3.raise_()
+        self.tabWidget.raise_()
+        self.splitter.raise_()
+
+        self.retranslateUi(Form)
+        self.tabWidget.setCurrentIndex(0)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+        Form.setTabOrder(self.pushButton, self.pushButton_2)
+        Form.setTabOrder(self.pushButton_2, self.tabWidget)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Cadastrar Usuário"))
+        self.label_3.setText(_translate("Form", "Cadastrar Produto"))
+        self.label_2.setText(_translate("Form", "Nome"))
+        self.label_4.setText(_translate("Form", "Senha"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Form", "Page"))
+        self.pushButton.setText(_translate("Form", "Cadastrar"))
+        self.pushButton_2.setText(_translate("Form", "Cancelar"))
+
+import recursos_rc
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_Form()
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec_())
+
