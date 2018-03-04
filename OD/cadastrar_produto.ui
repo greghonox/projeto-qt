@@ -91,116 +91,90 @@
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="0" column="0">
       <widget class="QGroupBox" name="groupBox">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="focusPolicy">
         <enum>Qt::TabFocus</enum>
        </property>
        <property name="title">
         <string>Tipo</string>
        </property>
-       <widget class="QCheckBox" name="checkBox_2">
+       <widget class="QWidget" name="">
         <property name="geometry">
          <rect>
           <x>11</x>
-          <y>70</y>
-          <width>82</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Vigilancia</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_5">
-        <property name="geometry">
-         <rect>
-          <x>99</x>
-          <y>70</y>
-          <width>121</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Infra Estrutura</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_6">
-        <property name="geometry">
-         <rect>
-          <x>99</x>
-          <y>31</y>
-          <width>93</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Informática</string>
-        </property>
-       </widget>
-       <widget class="QSplitter" name="splitter_2">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
           <y>30</y>
-          <width>81</width>
-          <height>20</height>
+          <width>561</width>
+          <height>52</height>
          </rect>
         </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <widget class="QCheckBox" name="checkBox">
-         <property name="text">
-          <string>Escritório</string>
-         </property>
-        </widget>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="1">
+          <widget class="QCheckBox" name="informatica">
+           <property name="text">
+            <string>Informática</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QCheckBox" name="outros">
+           <property name="text">
+            <string>Outros</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="vigilancia">
+           <property name="text">
+            <string>Vigilancia</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="2">
+          <widget class="QCheckBox" name="infraestrutura">
+           <property name="text">
+            <string>Infra Estrutura</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="escritorio">
+           <property name="text">
+            <string>Escritório</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
-       <widget class="QCheckBox" name="checkBox_7">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>30</y>
-          <width>93</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Outros</string>
-        </property>
-       </widget>
+       <zorder>vigilancia</zorder>
+       <zorder>infraestrutura</zorder>
+       <zorder>informatica</zorder>
+       <zorder>outros</zorder>
+       <zorder>groupBox_3</zorder>
+       <zorder>groupBox_3</zorder>
+       <zorder>groupBox_3</zorder>
       </widget>
      </item>
      <item row="1" column="0">
       <widget class="QGroupBox" name="groupBox_3">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="title">
         <string>Caracteristicas</string>
        </property>
-       <widget class="QLabel" name="label_9">
-        <property name="geometry">
-         <rect>
-          <x>167</x>
-          <y>30</y>
-          <width>67</width>
-          <height>25</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Forncedor</string>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="comboBox">
-        <property name="geometry">
-         <rect>
-          <x>240</x>
-          <y>30</y>
-          <width>71</width>
-          <height>25</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color:  rgb(200,200,200);</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QLineEdit" name="codigo">
         <property name="enabled">
          <bool>false</bool>
         </property>
@@ -232,10 +206,10 @@
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
-          <x>400</x>
-          <y>30</y>
-          <width>198</width>
-          <height>58</height>
+          <x>370</x>
+          <y>70</y>
+          <width>231</width>
+          <height>72</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
@@ -247,7 +221,7 @@
           </widget>
          </item>
          <item row="0" column="1" colspan="2">
-          <widget class="QDateEdit" name="dateEdit"/>
+          <widget class="QDateEdit" name="data_entrada"/>
          </item>
          <item row="1" column="0" colspan="2">
           <widget class="QLabel" name="label_7">
@@ -257,7 +231,7 @@
           </widget>
          </item>
          <item row="1" column="2">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+          <widget class="QLineEdit" name="preco"/>
          </item>
         </layout>
        </widget>
@@ -265,21 +239,21 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>60</y>
+          <y>70</y>
           <width>226</width>
-          <height>81</height>
+          <height>72</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_3">
          <item row="0" column="1">
-          <widget class="QLineEdit" name="lineEdit_2">
+          <widget class="QLineEdit" name="descricao">
            <property name="enabled">
             <bool>true</bool>
            </property>
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QSpinBox" name="spinBox"/>
+          <widget class="QSpinBox" name="quantidade"/>
          </item>
          <item row="0" column="0">
           <widget class="QLabel" name="label_4">
@@ -297,51 +271,71 @@
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="layoutWidget">
+       <widget class="QWidget" name="">
         <property name="geometry">
          <rect>
-          <x>438</x>
-          <y>101</y>
-          <width>157</width>
-          <height>27</height>
+          <x>159</x>
+          <y>30</y>
+          <width>441</width>
+          <height>36</height>
          </rect>
         </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
-          <widget class="QLabel" name="label_8">
-           <property name="text">
-            <string>Garantia</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>Forncedor</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="fornecedor">
+             <property name="styleSheet">
+              <string notr="true">background-color:  rgb(200,200,200);</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="adicionar">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="recursos.qrc">
+               <normaloff>:/img/img/icons8-plus.svg</normaloff>:/img/img/icons8-plus.svg</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
          <item>
-          <widget class="QSpinBox" name="spinBox_2"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_11">
-           <property name="text">
-            <string>Meses</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>Garantia</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="garantia">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>Meses</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
-       </widget>
-       <widget class="QPushButton" name="pushButton_3">
-        <property name="geometry">
-         <rect>
-          <x>320</x>
-          <y>30</y>
-          <width>41</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="recursos.qrc">
-          <normaloff>:/img/img/icons8-plus.svg</normaloff>:/img/img/icons8-plus.svg</iconset>
-        </property>
        </widget>
       </widget>
      </item>
@@ -388,7 +382,7 @@
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="cadastrar">
     <property name="styleSheet">
      <string notr="true">image: url(:/img/img/icons8-ok-filled.svg);
 background-color:   rgb(200,200,200);</string>
@@ -401,7 +395,7 @@ background-color:   rgb(200,200,200);</string>
       <normaloff>:/img/img/icons8-ok-filled.svg</normaloff>:/img/img/icons8-ok-filled.svg</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="cancelar">
     <property name="styleSheet">
      <string notr="true">background-color:   rgb(200,200,200);</string>
     </property>
@@ -437,18 +431,16 @@ background-color:   rgb(200,200,200);</string>
   <zorder>splitter</zorder>
  </widget>
  <tabstops>
-  <tabstop>lineEdit_2</tabstop>
-  <tabstop>spinBox</tabstop>
-  <tabstop>dateEdit</tabstop>
-  <tabstop>doubleSpinBox</tabstop>
-  <tabstop>spinBox_2</tabstop>
-  <tabstop>pushButton</tabstop>
-  <tabstop>pushButton_2</tabstop>
-  <tabstop>checkBox_6</tabstop>
-  <tabstop>checkBox_2</tabstop>
-  <tabstop>checkBox_5</tabstop>
-  <tabstop>checkBox_7</tabstop>
-  <tabstop>checkBox</tabstop>
+  <tabstop>descricao</tabstop>
+  <tabstop>quantidade</tabstop>
+  <tabstop>data_entrada</tabstop>
+  <tabstop>garantia</tabstop>
+  <tabstop>cadastrar</tabstop>
+  <tabstop>cancelar</tabstop>
+  <tabstop>informatica</tabstop>
+  <tabstop>vigilancia</tabstop>
+  <tabstop>infraestrutura</tabstop>
+  <tabstop>outros</tabstop>
   <tabstop>tabWidget</tabstop>
  </tabstops>
  <resources>

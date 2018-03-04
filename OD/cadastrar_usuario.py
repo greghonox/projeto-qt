@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'cadastrar_usuario.ui'
-#
-# Created by: PyQt5 UI code generator 5.10
-#
-# WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-class Ui_Form(object):
+class Ui_Form_usuario(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(330, 347)
@@ -103,17 +98,17 @@ class Ui_Form(object):
         self.label_3.setText(_translate("Form", "Cadastrar Produto"))
         self.label_2.setText(_translate("Form", "Nome"))
         self.label_4.setText(_translate("Form", "Senha"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Form", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Form", "Cadastrar"))
         self.pushButton.setText(_translate("Form", "Cadastrar"))
         self.pushButton_2.setText(_translate("Form", "Cancelar"))
 
-import recursos_rc
+import recursos
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_Form_usuario()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())

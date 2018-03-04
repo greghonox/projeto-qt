@@ -22,12 +22,6 @@
     <height>632</height>
    </size>
   </property>
-  <property name="baseSize">
-   <size>
-    <width>0</width>
-    <height>0</height>
-   </size>
-  </property>
   <property name="windowTitle">
    <string>SISTEMA ESTOQUE-ARPROTECT</string>
   </property>
@@ -38,7 +32,7 @@
       <x>0</x>
       <y>0</y>
       <width>1171</width>
-      <height>581</height>
+      <height>591</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -55,59 +49,65 @@
      <x>0</x>
      <y>0</y>
      <width>1182</width>
-     <height>20</height>
+     <height>30</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuEstoque">
     <property name="title">
-     <string>Estoque</string>
+     <string>Esto&amp;que</string>
     </property>
-    <addaction name="actionCadastrar"/>
-    <addaction name="actionConsultar"/>
-    <addaction name="separator"/>
-    <addaction name="actionFornecedor_CTRL_F"/>
+    <addaction name="cadastrar_produto"/>
+    <addaction name="consultar_produto"/>
    </widget>
    <widget class="QMenu" name="menuRelat_rio">
     <property name="title">
-     <string>Relatório</string>
+     <string>Re&amp;latório</string>
     </property>
-    <addaction name="actionConsulta"/>
+    <addaction name="relatorio"/>
    </widget>
    <widget class="QMenu" name="menuUsuarios">
     <property name="title">
-     <string>Usuarios</string>
+     <string>&amp;Usuarios</string>
     </property>
-    <addaction name="actionCadastrar_2"/>
+    <addaction name="gerenciar_usuario"/>
    </widget>
    <widget class="QMenu" name="menuConfigura_es">
     <property name="title">
-     <string>Configurações</string>
+     <string>&amp;Configurações</string>
     </property>
-    <addaction name="actionBanco_de_Dados"/>
-    <addaction name="actionBackup"/>
+    <addaction name="bancodados"/>
+    <addaction name="backup"/>
+   </widget>
+   <widget class="QMenu" name="menuForncedor">
+    <property name="title">
+     <string>Fornecedor</string>
+    </property>
+    <addaction name="cadastrar_fornecedor"/>
+    <addaction name="consultar_fornecedor"/>
    </widget>
    <addaction name="menuEstoque"/>
+   <addaction name="menuForncedor"/>
    <addaction name="menuRelat_rio"/>
-   <addaction name="menuConfigura_es"/>
    <addaction name="menuUsuarios"/>
+   <addaction name="menuConfigura_es"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionCadastrar">
+  <action name="cadastrar_produto">
    <property name="text">
     <string>Cadastrar(CTRL+C)</string>
    </property>
   </action>
-  <action name="actionConsultar">
+  <action name="consultar_produto">
    <property name="text">
-    <string>Consultar(CTRL+L)</string>
+    <string>Consultar(CTRL+&amp;L)</string>
    </property>
   </action>
-  <action name="actionConsulta">
+  <action name="relatorio">
    <property name="text">
-    <string>Consulta(CTRL+I)</string>
+    <string>&amp;Consulta(CTRL+I)</string>
    </property>
   </action>
-  <action name="actionCadastrar_2">
+  <action name="gerenciar_usuario">
    <property name="text">
     <string>Gerenciar(CTRL+U)</string>
    </property>
@@ -117,19 +117,29 @@
     <string>Consultar</string>
    </property>
   </action>
-  <action name="actionBanco_de_Dados">
+  <action name="bancodados">
    <property name="text">
-    <string>Banco de Dados</string>
+    <string>&amp;Banco de Dados</string>
    </property>
   </action>
-  <action name="actionBackup">
+  <action name="backup">
    <property name="text">
-    <string>Backup</string>
+    <string>Ba&amp;ckup</string>
    </property>
   </action>
   <action name="actionFornecedor_CTRL_F">
    <property name="text">
-    <string>Fornecedor(CTRL+F)</string>
+    <string>&amp;Fornecedor(CTRL+F)</string>
+   </property>
+  </action>
+  <action name="cadastrar_fornecedor">
+   <property name="text">
+    <string>Cadastrar(CTRL+F)</string>
+   </property>
+  </action>
+  <action name="consultar_fornecedor">
+   <property name="text">
+    <string>Consultar</string>
    </property>
   </action>
  </widget>

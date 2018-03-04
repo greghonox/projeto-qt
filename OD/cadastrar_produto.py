@@ -8,7 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-class Ui_Form(object):
+class Ui_Form_produto(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(655, 473)
@@ -198,7 +198,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle(_translate("Form", "Cadastrar Produto"))
         self.label_3.setText(_translate("Form", "Cadastrar Produto"))
         self.groupBox.setTitle(_translate("Form", "Tipo"))
         self.checkBox_2.setText(_translate("Form", "Vigilancia"))
@@ -227,7 +227,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_Form_produto()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())
